@@ -1,10 +1,14 @@
 import { Button } from "./ui/button";
+import { AddPrediction } from "./add-prediction";
 
 const Hero = () => {
   return (
     <div className="flex items-center justify-center mt-32">
       <div className="flex flex-col gap-6 text-center">
         <h1 className="text-7xl">Traffic Flow Modelling</h1>
+
+        <h1 className="text-[18px] -m-6 font-thin text-green-300">X</h1>
+
         <h1 className="text-6xl text-green-300">Machine Learning</h1>
         <div className="flex flex-col gap-2">
           <p>
@@ -20,9 +24,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex items-center justify-around mt-6">
-          <Button className="bg-green-400 text-black hover:bg-white hover:cursor-pointer">
-            Start Project
-          </Button>
+          <AddPrediction />
           <Button className="bg-green-400 text-black hover:bg-white hover:cursor-pointer">
             Request a Demo
           </Button>
