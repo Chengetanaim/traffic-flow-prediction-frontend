@@ -63,9 +63,7 @@ export function PredictionsTable() {
       </TableBody>
       <TableFooter className="bg-black">
         <TableRow>
-          <TableCell colSpan={3} className="font-bold">
-            Total
-          </TableCell>
+          <TableCell colSpan={3} className="font-bold"></TableCell>
           <TableCell className="text-right"></TableCell>
         </TableRow>
       </TableFooter>

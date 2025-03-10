@@ -77,6 +77,7 @@ export function AddPrediction() {
       toast.success("Prediction added", {
         description: `Incoming traffic - ${response.data.traffic}`,
       });
+      setTimeout(() => window.location.reload(), 1000);
     } catch (error) {
       console.error("Error posting data:", error);
       toast.error("Error posting data");
@@ -89,7 +90,7 @@ export function AddPrediction() {
       <Dialog>
         <DialogTrigger asChild className="bg-[#030303] text-white">
           <Button className="bg-green-400 text-black hover:bg-white hover:cursor-pointer">
-            Start Project
+            Make Prediction
           </Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[505px] bg-[#030303] text-white">
