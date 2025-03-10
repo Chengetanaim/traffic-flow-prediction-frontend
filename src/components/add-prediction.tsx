@@ -190,7 +190,7 @@ export function AddPrediction() {
                   name="temperature"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Temperature</FormLabel>
+                      <FormLabel>Temperature (°C)</FormLabel>
                       <FormControl>
                         <Input {...field} className="col-span-3 w-[400px]" />
                       </FormControl>
